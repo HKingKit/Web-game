@@ -1,0 +1,74 @@
+/*===========================Header========================*/
+header{
+    background: #121112;
+    /*The Background Color must be same with a:hover color*/
+    display: flex;
+    padding: 5px 0;
+}
+nav{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.nav_links
+{
+    display: inline-block;
+    padding: 20px 20px;
+}
+.nav_links ul li {
+    padding: 5 25px 0 0;
+    list-style:none;
+    display: inline-block;
+    margin:0 15px;
+}
+.nav_links ul li a{
+    color: #fff;
+    padding: 15px 25px;
+
+}
+.nav_links a:hover{
+    transition: 0.5s;
+    font-style:underline;
+}
+.nav_links ul li.active a {
+    transition: 0.5s;
+    font-style:underline;
+}
+/*==========================================================*/
+/*Header Backups header{
+    background: #121112;
+    /*The Background Color must be same with a:hover color*/
+/*    display: flex;
+    padding: 5px 0;
+}
+nav{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.nav_links
+{
+    display: inline-block;
+    padding: 20px 20px;
+}
+.nav_links ul li {
+    padding: 5 25px 0 0;
+    list-style:none;
+    display: inline-block;
+    margin:0 15px;
+}
+.nav_links ul li a{
+    color: #fff;
+    padding: 15px 25px;
+    font-family: "BIO SANS BOLD";
+
+}
+.nav_links a:hover{
+    transition: 0.5s;
+    font-style:underline;
+}
+.nav_links ul li.active a {
+    transition: 0.5s;
+    font-style:underline;
+}
+*/
