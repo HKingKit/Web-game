@@ -1,6 +1,6 @@
 /*===========================Header========================*/
 header{
-    background: #121112;
+    background: #121212;
     /*The Background Color must be same with a:hover color*/
     display: flex;
     padding: 5px 0;
@@ -22,7 +22,6 @@ nav{
     margin:0 15px;
 }
 .nav_links ul li a{
-    color: #fff;
     padding: 15px 25px;
 
 }

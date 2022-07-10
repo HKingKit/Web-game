@@ -203,24 +203,21 @@ section .content-box .form .social li a{
     <div class="content-box">
         <div class="form">
             <h2>Join our game world!</h2>
-            <form onsubmit="signup()" action="index.html">
+            <form action="login.html">
                 <div class="input">
                     <span>Username</span>
-                    <input type="text" placeholder="Enter Username" id="username">
-                </div>
-                <div class="input">
-                    <span>Email</span>
-                    <input type="text" placeholder="Enter email" id="email">
+                    <input type="text" required name="username">
                 </div>
                 <div class="input">
                     <span>Password</span>
-                    <input type="password" placeholder="Enter Password" id="password">
-                </div>
-                <div class="remember">
-                    <label><input type="checkbox" name="remember"> Remember Me</label>
+                    <input type="password" required name="password">
                 </div>
                 <div class="input">
-                    <input type="submit" value="Sign In">
+                    <span>Confirm Password</span>
+                    <input type="password" required name="password">
+                </div>
+                <div class="input">
+                    <input type="submit" value="Sign Up">
                 </div>
                 <div class="input">
                     <p>Already have an account? <a href="login.html">Sign In</a></p>
