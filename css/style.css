@@ -4,7 +4,7 @@
     src: url(../Fonts/Modern-Warfare.ttf);
 }
 @font-face {
-    font-family: "BIO SANS";
+    font-family: "MINECRAFT FONT";
     src: url(../Fonts/Bio-Sans-Regular.otf);
 }
 @font-face {
@@ -49,17 +49,11 @@ body{
     max-width: 1168px;
     margin: auto;
     width: 100%;
+    position: relative;
 }
-/* Header */
+/*===========================Header========================*/
 header{
-    background: rgb(19, 19, 19);
-    display: flex;
-    padding: 20px 0;
-}
-nav{
-   display:flex;
-   align-items: center;
-   justify-content: space-between;
+    padding: 5px 0;
 }
 .nav_links
 {
@@ -67,31 +61,26 @@ nav{
     padding: 20px 20px;
 }
 .nav_links ul li {
-    padding:0 24px 0 0;
+    padding: 5 25px 0 0;
     list-style:none;
     display: inline-block;
     margin:0 15px;
 }
 .nav_links ul li a{
+    font-size: 1.2rem;
     color: #fff;
-    padding: 5px 15px;
+    padding: 15px 25px;
     font-family: "BIO SANS BOLD";
-    font-size:1.2rem;
 }
 .nav_links a:hover{
-    font-size: 1.2rem;
-    color: #79D9FF;
-    transition: 0.5s;
     background-image: url(../img/a-hover.png);
-    font-style:underline;
+    color: #FF3232;
 }
 .nav_links ul li.active a {
-    font-size: 1.2rem;
-    color: #79D9FF;
-    transition: 0.5s;
-    background-image: url(../img/a-active.png);
-    font-style:underline;
+    background-image: url(../img/a-hover.png);
+    color: #FF3232;
 }
+/*==========================================================*/
 /* Logo */
 .logo{
     width: 25%;
@@ -105,19 +94,6 @@ nav{
 .logo .red
 {
     color: red;
-}
-#bell-icon{
-    position: relative;
-}
-#bell-icon span {
-    content: '';
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: rgb(255, 255, 255);
-    position: absolute;
-    top: 11px;
-    right: 15px;
 }
 /* Menu Icons */
 .menu-icon{
@@ -265,7 +241,7 @@ nav{
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     margin-bottom: 2rem;
-    border-bottom: 5px solid #FF0000;
+    border-bottom: 2px solid #FF0000;
     font-family: "BIO SANS EXTRALIGHT";
 }
 .btn{
@@ -401,87 +377,9 @@ nav{
     background: black;
     transition: 0.3s all linear;
 }
-/* Footer */
-.footer-container{
-	max-width: 1170px;
-	margin:auto;
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-ul{
-	list-style: none;
-}
-.footer{
-    background-color: black;
-    padding: 70px 0;
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #FF0000;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-}
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
-}
-.footer-col ul li a{
-	font-size: 16px;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
-}
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #FF0000;
-}
-/* Copyright */
-.copyright {
-	background: black;
-	color: #fff;
-	padding: 10px;
-	text-align: center;
-	font-weight: lighter;
-}
 
 
-
-                                /* Details Section */
+/* Details Section */
 /* Video */
 .video-container video{
     width: 100%;
@@ -558,7 +456,7 @@ ul{
 }
 .download-links {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 2rem;
 }
 .download-links a{
@@ -570,7 +468,6 @@ ul{
     margin-right: 20px;
     transition: 0.3s ease-in-out;
     margin-top: 2rem;
-    transition: 1s;
 }
 .download-links a:hover {
     background: black;
@@ -671,80 +568,3 @@ ul{
     color: red;
 }
 
-
-/*Login*/
-
-.input #username {
-    transition: 1s;
-}
-
-.input #username:hover{
-    border-color: #ccff00ec;
-}
-
-.input #username:focus{
-    width: 340px;
-    border-color: #00ffd0ec;
-}
-
-.input #password {
-    transition: 1s;
-}
-
-.input #password:hover{
-    border-color: #ccff00ec;
-}
-
-.input #password:focus{
-    width: 340px;
-    border-color: #00ffd0ec;
-}
-
-.input #email {
-    transition: 1s;
-}
-
-.input #email:hover{
-    border-color: #ccff00ec;
-}
-
-.input #email:focus{
-    width: 340px;
-    border-color: #00ffd0ec;
-}
-/*remember*/
-.remember{
-    overflow: hidden;
-    width:110px;
-    transition: 1s;
-    display: flex;
-    align-items: center;
-}
-
-.remember:hover{
-    color: goldenrod;
-    background-color: #0094FF;
-}
-/*Join-now*/
-.form .input #join-now{
-    transition: 1s;
-}
-
-.form .input #join-now:hover{
-    color:#79D9FF;
-}
-
-/*social*/
-#social{
-   transition: 1s;
-}
-
-#social:hover{
-    background: blue;
-}
-
-#avatar{
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-}

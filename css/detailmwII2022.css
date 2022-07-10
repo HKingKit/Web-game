@@ -25,7 +25,7 @@
 }
 
 * {
-    font-family: "BIO SANS", "BIO SANS LIGHT","Segoe UI Variable Display";
+    font-family: "BIO SANS", "BIO SANS LIGHT";
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -43,7 +43,9 @@ img {
 }
 body{
     color: whitesmoke;
-    background: #0B0B0B;
+    background: rgb(43, 43, 43);
+    background-image: url(../img/MWII2022-Detail/global-nav-bg.png);
+
 }
 .container{
     max-width: 1168px;
@@ -52,14 +54,7 @@ body{
 }
 /* Header */
 header{
-    background: #121112;
-    display: flex;
-    padding: 20px 0;
-}
-nav{
-   display:flex;
-   align-items: center;
-   justify-content: space-between;
+    padding: 5px 0;
 }
 .nav_links
 {
@@ -67,29 +62,29 @@ nav{
     padding: 20px 20px;
 }
 .nav_links ul li {
-    padding:0 24px 0 0;
+    padding:5 15px 0 0;
     list-style:none;
     display: inline-block;
     margin:0 15px;
 }
 .nav_links ul li a{
     color: #fff;
-    padding: 5px 15px;
+    padding: 15px 25px;
     font-family: "BIO SANS BOLD";
     font-size:1.2rem;
 }
 .nav_links a:hover{
     font-size: 1.2rem;
-    color: #79D9FF;
+    color: #88cc4c;
     transition: 0.5s;
-    background-image: url(../img/a-hover.png);
+    background-image: url(../img/MWII2022-Detail/a-hover.png);
     font-style:underline;
 }
 .nav_links ul li.active a {
     font-size: 1.2rem;
-    color: #79D9FF;
+    color: #88cc4c;
     transition: 0.5s;
-    background-image: url(../img/a-active.png);
+    background-image: url(../img/MWII2022-Detail/a-active.png);
     font-style:underline;
 }
 /* Logo */
@@ -136,7 +131,7 @@ nav{
 }
 .menu-icon:hover{
     background: black;
-    border: 2px solid #71af3a;;
+    border: 2px solid #88cc4c;;
 }
 .menu-icon div{
     display: block;
@@ -192,11 +187,11 @@ nav{
 .titles h1
 {
     font-family: "BIO SANS EXTRALIGHT";
-    color:#71af3a;
+    color:#88cc4c;
 }
 .navbar a:hover{
     font-size: 1.8rem;
-    color:#71af3a;
+    color:#88cc4c;
 }
 /* Notification */
 .notification{
@@ -293,7 +288,7 @@ nav{
 .heading .bx {
     font-size: 21px;
     color: white;
-    background: #71af3a;
+    background: #88cc4c;
     padding: 10px;
     border-radius: 5rem;
 }
@@ -344,74 +339,6 @@ nav{
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
     gap: 1.2rem;
 }
-/* Footer */
-.footer-container{
-	max-width: 1170px;
-	margin:auto;
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-ul{
-	list-style: none;
-}
-.footer{
-    background-color: black;
-    padding: 70px 0;
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #71af3a;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-}
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
-}
-.footer-col ul li a{
-	font-size: 16px;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-	color: #ffffff;
-}
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #FF0000;
-}
 /* Copyright */
 .copyright {
 	background: black;
@@ -440,6 +367,7 @@ ul{
 }
 /* About */
 .titles {
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -450,10 +378,11 @@ ul{
     margin-left: 23.5rem;
 }
 .about h2{
+    font-family: "BIO SANS";
     display: inline-flex;
     font-size: 1.4rem;
     font-weight: 500;
-    border-bottom: 2px solid #71af3a;
+    border-bottom: 2px solid #88cc4c;
 }
 .about p {
     width: 1100px;
@@ -462,10 +391,10 @@ ul{
     text-align: justify;
 }
 .about p b {
-    color: #71af3a;
+    color: #88cc4c;
 }
 .about p a {
-    color: #71af3a;
+    color: #88cc4c;
 }
 .about p a:hover{
     text-decoration: underline;
@@ -488,7 +417,7 @@ ul{
     text-align: center;
     font-size: 2.2rem;
     text-transform: uppercase;
-    color: #71af3a;
+    color: #88cc4c;
     font-family: "BIO SANS EXTRALIGHT";
 }
 .download p {
@@ -507,15 +436,18 @@ ul{
 .download-links a{
     text-align: center;
     padding: 14.5px 20px;
-    color: white;
+    color: #7F7F7F;
     font-weight: 500;
     margin-right: 20px;
-    transition: 0.3s ease-in-out;
+    transition-duration: 0.5s;
     margin-top: 2rem;
+    background-color: #121212;
+    opacity: 255;
     background-image: url(../img/MWII2022-Detail/button.png);
 }
 .download-links a:hover {
     background-image: url(../img/MWII2022-Detail/button-hover.png);
+    color: white;
 }
 
 /* About Us */
@@ -534,13 +466,13 @@ ul{
     align-items: center;
     justify-content: center;
     display: flex;
-    color: #71af3a;
+    color: #88cc4c;
 }
 .about-us h2 {
     align-items: center;
     justify-content: center;
     display: flex;
-    color: #71af3a;
+    color: #88cc4c;
     margin-top: 20px;
 }
 .about-container{
@@ -570,7 +502,7 @@ ul{
 .about-title {
     padding-left: 10px;
     font-size: 1.2rem;
-    color: rgb(0, 225, 255);
+    color: #88cc4c;
 }
 /*Copyrights*/
 .copyright p{
@@ -581,10 +513,10 @@ ul{
     width: 450px;
 }
 #info b {
-    color: #71af3a;;
+    color: #88cc4c;
 }
 #info a {
-    color: #71af3a;;
+    color: #88cc4c;
     font-weight: bold;
     padding-left: 40px;
 }
@@ -595,7 +527,7 @@ ul{
     display: inline-block;
     padding: 15px;
     color: white;
-    background-color: #71af3a;;
+    background-color: #88cc4c;
     text-align: center;
     cursor: pointer;
     width: 450px;
@@ -605,19 +537,7 @@ ul{
 }
 .contact:hover {
     background-color: black;
-    border: 1px solid #71af3a;;
-    color: #71af3a;;
+    border: 1px solid #88cc4c;;
+    color: #88cc4c;;
 }
 
-/*Login*/
-
-.input #username {
-    transition: 0.25px;
-}
-
-
-
-.input #username{
-    width: 270px;
-    border-color: #ffc400ec;
-}
