@@ -13,7 +13,7 @@ function validate()
 }
 
 ///////////// sign up///////
-function signup(e) {
+function signup(event) {
     event.preventDefault();
     var username=document.getElementById("username").value;
     var email=document.getElementById("email").value;
@@ -29,7 +29,7 @@ function signup(e) {
     window.location.href="index3.html";
 }
 
-function login(e) {
+function login(event) {
     event.preventDefault();
     var username=document.getElementById("username").value;
     var email=document.getElementById("email").value;
@@ -43,7 +43,8 @@ function login(e) {
         email == data.email &&
         password == data.password){
         alert("đăng nhập thành công");
-        window.location.href="index3.html";
+        window.location.href="index.html";
+        generateAvatar(user)
     }
     else{
         alert("vui lòng nhập tài khoản và mật khẩu");
