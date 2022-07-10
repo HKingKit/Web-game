@@ -26,7 +26,7 @@ function signup(e) {
     var json = JSON.stringify(user);
     localStorage.setItem(username, json);
     alert("đăng ký thành công");
-    window.location.href="index2.html";
+    window.location.href="index3.html";
 }
 
 function login(e) {
@@ -43,7 +43,7 @@ function login(e) {
         email == data.email &&
         password == data.password){
         alert("đăng nhập thành công");
-        window.location.href="index2.html";
+        window.location.href="index3.html";
     }
     else{
         alert("vui lòng nhập tài khoản và mật khẩu");
