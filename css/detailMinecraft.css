@@ -445,6 +445,7 @@ header{
     background-repeat:no-repeat;
     background-size: cover;
     background-image: url(../img/MINECRAFT-Detail/button.png);
+    font-family: "MINECRAFT REGULAR";
 }
 .download-links a:hover {
     background-image: url(../img/MINECRAFT-Detail/button-hover.png);
